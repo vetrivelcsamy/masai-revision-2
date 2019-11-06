@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://vetrivelcsamy.me/cdn/style/bootstrap.min.css"
+			integrity="sha256-X00qrYt9hUQ7rHsQyJKr4r5rAb9lpphVibBMFOVCc8E=
+      				sha384-B7UPi9HrazI8vcsy/uEN8YlBIKNCsx5Xh3DDzD5HMavHX+h59jV58qyMbhbT116x
+      				sha512-AvgWkhKwPRGDNhXWHmdnJm6zLgihQ4bCUdcVy/lu4LtwkTnpeiilpLaPpqfyeloyBUTSKnji7vfvazWYH18WsQ=="
+			crossorigin="anonymous"
+		/>
+
+		<!-- font Awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://vetrivelcsamy.me/cdn/font/css/all.min.css"
+			integrity="sha256-LniyxK3u9MEL2VSTZCirJIeN+B+VkznI+D1Yhs/hdvQ= sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx sha512-Vqk87/MDj+ZkbjtibPWSybp8R6tSMD/fvSQjIzazCbY2mg57gbmUXcyLh/HySD/UvUESV85di1OUSj+Puun5pA=="
+			crossorigin="anonymous"
+		/>
+		<title>Expense manager</title>
+	</head>
+	<body>
+		<div class="container mb-5">
+			<h2 class="text-center mt-4  mb-5 font-weight-bold text-secondary">
+				<i class="fad fa-analytics"></i> Expense Manager
+			</h2>
+			<div class="dataEntryDiv">
+				<form id="inputForm" class="mb-5">
+					<div class="row">
+						<div class="col mt-3">
+							<label>Payment Infomation</label>
+							<input
+								class="form-control"
+								id="descInput"
+								class="desc"
+								type="text"
+								value="Rent"
+								placeholder="Rent"
+								required
+							/>
+						</div>
+					</div>
+					<div class="row mt-4 mb-3">
+						<div class="col">
+							<label>Income</label>
+							<input
+								class="form-control"
+								id="amountIncome"
+								class="amount"
+								type="number"
+								value="0"
+								required
+							/>
+						</div>
+						<div class="col">
+							<label>Expense</label>
+							<input
+								class="form-control"
+								id="amountExpense"
+								class="amount"
+								type="number"
+								value="0"
+								required
+							/>
+						</div>
+					</div>
+					<div class="col">
+						<button type="submit" class="btn btn-primary">
+							<i class="fad fa-plus-hexagon"></i> Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="container mt-5">
+			<h4 class="mb-3 mt-3">Transaction Summary</h4>
+			<table class="table table-bordered text-center" id="detailTable">
+				<thead>
+					<tr>
+						<th scope="col" class="sl">#</th>
+						<th scope="col" class="date"><i class="fad fa-calendar-week"></i> Date</th>
+						<th scope="col" class="desc"><i class="fad fa-question-circle"></i> Description</th>
+						<th scope="col" class="type"><i class="fad fa-credit-card"></i> Type</th>
+						<th scope="col" class="amount"><i class="fad fa-chart-line-down"></i> Expense</th>
+						<th scope="col" class="balance"><i class="fad fa-piggy-bank"></i> Income</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+		<!-- font awesome javascript  cdn -->
+		<script src="https://vetrivelcsamy.me/cdn/js/all.min.js" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
